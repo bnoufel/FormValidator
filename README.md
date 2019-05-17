@@ -10,7 +10,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/).
 
 ```sh
-npm install formvalidator
+npm i --save @bnoufel/formvalidator
 ```
 
 ## Introduction
@@ -31,7 +31,7 @@ import FormValidator, {
 	IFormValidator,
 	ResFormValidator,
 	ErrorFormValidator
-} from 'FormValidator';
+} from '@bnoufel/formvalidator';
 
 const form: IFormValidator = {
     email: {

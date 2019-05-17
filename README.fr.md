@@ -11,7 +11,7 @@ FormValidator est un module [Node.js](https://nodejs.org/en/) disponible sur
 [npm](https://www.npmjs.com/).
 
 ```sh
-npm install --save formvalidator
+npm i --save @bnoufel/formvalidator
 ```
 
 ## Introduction
@@ -33,7 +33,7 @@ import FormValidator, {
 	IFormValidator,
 	ResFormValidator,
 	ErrorFormValidator
-} from 'FormValidator';
+} from '@bnoufel/formvalidator';
 
 const form: IFormValidator = {
     email: {
