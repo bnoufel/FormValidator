@@ -1,0 +1,23 @@
+{
+  "watch": true,
+  "compilerOptions": {
+    "removeComments": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "target": "es6",
+    "declaration": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "FormValidator.ts",
+    "app.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/FormValidator.d.ts"
+  ]
+}

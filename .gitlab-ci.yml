@@ -1,0 +1,11 @@
+image: node:12.1.0
+
+tslint:
+  stage: test
+  script:
+  - npm install
+  - npm run norme
+  - npm run test
+  tags:
+  - docker
+

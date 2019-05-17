@@ -1,0 +1,60 @@
+{
+  "extends": ["tslint-config-standard",
+    "tslint-consistent-codestyle",
+    "tslint-config-airbnb",
+    "tslint-misc-rules"],
+  "linterOptions": {
+    "exclude": [
+      "test/*.test.ts",
+      "src/FormValidator.d.ts"
+    ]
+  },
+  "rules": {
+    "no-any": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "interface-name": [true, "always-prefix"],
+    "class-method-newlines": true,
+    "class-name": true,
+    "file-name-casing": [true, "pascal-case"],
+    "no-reference-import": true,
+    "no-property-initializers": true,
+    "no-unnecessary-else": [true, "allow-else-if"],
+    "ter-indent": [
+      true,
+      4
+    ],
+    "prefer-es6-imports": [
+      true,
+      "module-name"
+    ],
+    "sort-imports": [ true, "whitespace-insensitive" ],
+    "prefer-array-literal": [true, { "allow-type-parameters": true }],
+    "no-increment-decrement": true,
+    "no-unused": true,
+    "no-var-before-return": true,
+    "no-duplicate-imports": true,
+    "prefer-const": true,
+    "no-var-keyword": true,
+    "no-var-requires": true,
+    "max-line-length": [true, 120],
+    "curly": [true],
+    "comment-format": [true, "check-space"],
+    "no-consecutive-blank-lines": true,
+    "space-before-function-paren": [true, "never"],
+    "max-file-line-count": [true, 300],
+    "no-return-await": true,
+    "variable-name": [true, "check-format", "allow-pascal-case"],
+    "ban-types": {
+      "options": [
+        ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+        ["Function", "Avoid using the `Function` type. Prefer a specific function type, like `() => void`, or use `ts.AnyFunction`."],
+        ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+        ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+        ["String", "Avoid using the `String` type. Did you mean `string`?"]
+      ]
+    }
+  }
+}

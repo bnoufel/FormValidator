@@ -1,0 +1,20 @@
+{
+  "password.required" : "Password is required.",
+  "email.required" : "Email is required.",
+  "hash.required" : "The type of hash is required.",
+  "hash.unknown" : "The type of hash is unknown.",
+  "unknown.error": "An unknown error.",
+  "password.regex.wrong": "Password must contain at least a lowercase, an uppercase, a number and a special character.",
+  "email.regex.wrong": "The format of the email is not valid.",
+  "regex.wrong": "The format of the input is not valid.",
+  "password.notmatch": "Password confirmation doesn't match with Password.",
+  "password.regex.len.wrong": "The password length must be between 12 and 128 characters.",
+  "email.regex.format.wrong": "Only RegExp and object are available.",
+  "regex.format.wrong": "Only RegExp are available.",
+  "required": "This input is required.",
+  "regex.upper.denied": "Uppercases denied.",
+  "regex.lower.denied": "Lowercases denied.",
+  "regex.number.denied": "Numbers denied.",
+  "regex.special.denied": "Special characters denied.",
+  "length.error": "The field must respect length regex."
+}

@@ -1,0 +1,20 @@
+{
+  "password.required" : "Le mot de passe est requis.",
+  "email.required" : "L'email est requis.",
+  "hash.required" : "Le type de hash est obligatoire.",
+  "hash.unknown" : "Le type de hash est inconnu.",
+  "unknown.error": "Une erreur inconnue est survenue.",
+  "password.regex.wrong": "Le mot de passe doit contenir au minimum une majuscule, une minuscule, un chiffre et un caractère spécial.",
+  "email.regex.wrong": "Le format de l'email n'est pas valide.",
+  "regex.wrong": "Le format du champ n'est pas valide.",
+  "password.notmatch": "Les mots de passe ne sont pas identiques.",
+  "password.regex.len.wrong": "Le mot de passe doit être entre 2 et 128 caractères.",
+  "email.regex.format.wrong": "Seulement des regex de type RegExp et object sont valides.",
+  "regex.format.wrong": "Seulement des regex de type RegExp sont valides.",
+  "required": "Le champ est obliatoire.",
+  "regex.upper.denied": "Les majuscules sont interdites.",
+  "regex.lower.denied": "Les minuscules sont interdites.",
+  "regex.number.denied": "Les chiffres sont interdits.",
+  "regex.special.denied": "Les caractères spéciaux sont interdits.",
+  "length.error": "Le champ doit respecter le nombre de caractères spécifié."
+}

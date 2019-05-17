@@ -1,0 +1,50 @@
+{
+  "name": "@bnoufel/formvalidator",
+  "version": "1.0.0-1",
+  "description": "This package is for a form validation in node written in TypeScript",
+  "keywords": ["form", "validator", "validation", "formulaire", "node", "typescript"],
+  "main": "dist/FormValidator.js",
+  "types": "src/FormValidator.d.ts",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "fs": "0.0.1-security",
+    "md5": "^2.2.1",
+    "sha1": "^1.1.1",
+    "sha256": "^0.2.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/md5": "^2.1.33",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.10",
+    "@types/sha1": "^1.1.1",
+    "@types/sha256": "^0.2.0",
+    "mocha": "^6.1.4",
+    "tslint": "^5.16.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-jsdoc-rules": "^0.2.0",
+    "tslint-misc-rules": "^3.5.1"
+  },
+  "scripts": {
+    "prepublishOnly": "rm -rf dist/; npx tsc; NAME=FormValidator.d.ts;cat dist/*.d.ts > ./src/${NAME}; cat dist/src/Utils.d.ts >> ./src/${NAME};cat dist/src/*/*.d.ts >> ./src/${NAME};sed -ie \"/^import/d\" ./src/${NAME}; rm -f ./src/${NAME}e",
+    "norme": "npx tslint --project tsconfig.json",
+    "test": "npx tsc; mocha dist/test/*.test.js"
+  },
+  "author": "Benjamin Noufel",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bnoufel/FormValidator.git"
+    },
+  "bugs": {
+      "url": "https://github.com/bnoufel/FormValidator/issues"
+    },
+    "homepage": "https://github.com/bnoufel/FormValidator#readme"
+}
