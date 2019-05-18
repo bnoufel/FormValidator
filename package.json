@@ -1,8 +1,15 @@
 {
   "name": "@bnoufel/formvalidator",
-  "version": "1.0.0-1",
+  "version": "1.0.0-3",
   "description": "This package is for a form validation in node written in TypeScript",
-  "keywords": ["form", "validator", "validation", "formulaire", "node", "typescript"],
+  "keywords": [
+    "form",
+    "validator",
+    "validation",
+    "formulaire",
+    "node",
+    "typescript"
+  ],
   "main": "dist/FormValidator.js",
   "types": "src/FormValidator.d.ts",
   "dependencies": {
@@ -40,11 +47,11 @@
     "test": "test"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/bnoufel/FormValidator.git"
-    },
+    "type": "git",
+    "url": "git+https://github.com/bnoufel/FormValidator.git"
+  },
   "bugs": {
-      "url": "https://github.com/bnoufel/FormValidator/issues"
-    },
-    "homepage": "https://github.com/bnoufel/FormValidator#readme"
+    "url": "https://github.com/bnoufel/FormValidator/issues"
+  },
+  "homepage": "https://github.com/bnoufel/FormValidator#readme"
 }
