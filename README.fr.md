@@ -90,7 +90,7 @@ export interface IFormValidatorKey {
     value: string | null;
     confirmPassword?: string;
     type: string;
-    crypt?: string | HashFunction;
+    hash?: string | HashFunction;
     salt?: number;
     regex?: IRegexFormValidator | RegExp;
     length?: ILengthFormValidator;
