@@ -1,6 +1,6 @@
 {
   "name": "@bnoufel/formvalidator",
-  "version": "1.0.0-3",
+  "version": "1.0.0-5",
   "description": "This package is for a form validation in node written in TypeScript",
   "keywords": [
     "form",

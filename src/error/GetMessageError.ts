@@ -10,9 +10,12 @@ import fs from 'fs';
  */
 const GetMessageErrorLib = (lang: string, message: string): string => {
     try {
-        fs.readFileSync(`${dirname(__dirname)}/../../lang/${lang}.json`);
+        const data = fs.statSync(`${dirname(__dirname)}/../../lang/${lang}.json`);
+        if (!data.isFile()) {
+            return 'The lang file does not exist or incorrect';
+        }
     } catch (e) {
-        return 'The lang file does not exist';
+        return 'The lang file does not exist or incorrect';
     }
     const data = fs.readFileSync(`${dirname(__dirname)}/../../lang/${lang}.json`);
     const error = JSON.parse(data.toString());
@@ -31,7 +34,10 @@ const GetMessageErrorLib = (lang: string, message: string): string => {
  */
 export const GetMessageError = (lang: string, message: string): string => {
     try {
-        fs.statSync(path.resolve(`lang/${lang}.json`));
+        const data = fs.statSync(path.resolve(`lang/${lang}.json`));
+        if (!data.isFile()) {
+            return 'The lang file does not exist or incorrect';
+        }
     } catch (err) {
         return GetMessageErrorLib(lang, message);
     }
