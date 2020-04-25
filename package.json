@@ -14,7 +14,7 @@
   "types": "src/FormValidator.d.ts",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "fs": "0.0.1-security",
+    "fs": "0.0.2",
     "md5": "^2.2.1",
     "sha1": "^1.1.1",
     "sha256": "^0.2.0",
