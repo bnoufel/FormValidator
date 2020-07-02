@@ -13,7 +13,7 @@
   "main": "dist/FormValidator.js",
   "types": "src/FormValidator.d.ts",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "fs": "0.0.1-security",
     "md5": "^2.2.1",
     "sha1": "^1.1.1",
